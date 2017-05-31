@@ -2,15 +2,17 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <UserSecretsId>aspnet-dotnetcore-2CBEE33C-5B12-4ADA-8940-456BA7F0BBE7</UserSecretsId>
+    <MvcRazorCompileOnPublish>true</MvcRazorCompileOnPublish>
+    <PackageTargetFallback>$(PackageTargetFallback);portable-net45+win8+wp8+wpa81;</PackageTargetFallback>
+    <UserSecretsId>aspnet-dotnetcore-55803793-2974-4B54-B6BB-99D53958F563</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0-preview1-final" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.0-preview1-final" />
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.0-preview1-final" />
   </ItemGroup>
 
 </Project>
